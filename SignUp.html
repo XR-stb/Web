@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background: url(img/bg.jpg) no-repeat center center fixed;-webkit-background-size: cover;
+            -o-background-size: cover;                
+            background-size: cover;
+        }
+        .login-box{
+            width: 300px;
+            height: 400px;
+            background-color: #90A4AE;
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 50px;
+            border-radius: 15px;
+            opacity: 80%;
+        }
+        .log-title{
+            text-align: center;
+            letter-spacing: 1px;
+            color: white;
+            margin-bottom: 50px;
+        }
+        .name{
+            border-radius: 7px;
+            opacity: 100%;
+        }
+        .number{
+            margin-top: 5px;
+            border-radius: 7px;
+            opacity: 100%;
+        }
+        .password{
+            margin-top: 5px;
+            border-radius: 7px;
+            opacity: 100%;
+        }
+        .input-box input{
+            width: 100%;
+            padding: 10px;
+        }
+        .input-box{
+            position: relative;
+            
+        }
+        .p-btn{
+            text-align: center;
+        }
+        
+        .login-btn{
+            width: 120px;
+            height: 40px;
+            margin-top: 40px;
+
+            color: white;
+            background-color: #90a4ae;
+            text-align: center;
+            font-size: large;
+
+            border-color: none;
+            border-radius: 20px;
+            box-shadow: 0;
+
+            outline: 0 !important;
+            /* background-image: linear-gradient(to right, #2BA36B , #009978); */
+        }
+        .txt{
+            color: white;
+        }
+        .more{
+            text-align: center;
+            margin-top: 25%;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div class="login-box">
+        <h1 class="log-title">Sign up</h1>
+        <div class="input-box">
+            <input type="text" class="name" placeholder="姓名">
+            <input type="text" class="number" placeholder="学号">
+            <!-- <input type="text" class="username" placeholder="username"> -->
+            <input type="password" class="password" placeholder="password">  
+        </div>
+        <form>
+            <input type="radio" id="male" name="gender" value="man">
+            <label for="male" class="txt">男生</label>
+
+            <input type="radio" id="female" name="gender" value="woman">
+            <label for="female" class="txt">女生</label>
+        </form>
+        <form>
+            <input type="checkbox" id="code" name="interest" value="code">
+            <label for="code" class="txt">敲代码</label>
+
+            <input type="checkbox" id="basketball" name="interest" value="code">
+            <label for="code" class="txt">打篮球</label>
+
+            <input type="checkbox" id="game" name="interest" value="code">
+            <label for="code" class="txt">玩游戏</label>
+        </form>
+        <p class="p-btn"><button class="login-btn" type="button">确认</button></p>
+        <p class="more">
+            <a href="index.html">登录 | </a>
+            <a href="javascript:alert('放心，这里啥也没有');">忘记密码 | </a>
+            <a href="javascript:alert('这里也是空空如也');">更多</a>
+        </p>
+    </div>
+    
+</body>
+</html>
